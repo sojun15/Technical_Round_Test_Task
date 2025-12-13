@@ -13,16 +13,16 @@
 
 <h3>In database schema, i will create two table that name 'url_shorter' and 'user_info'. Here i need different types of column such as:</h3>
 <h4>url_shorter table:</h4>
-<li>id (integer,5) </li> <!-- Primary key -->
-<li>user_id(integer,5)</li> <!-- Foreign key -->
+<li>id (integer,20) </li> <!-- Primary key -->
+<li>user_id(integer,20)</li> <!-- Foreign key -->
 <li>Orginal_url (string,50) </li>
 <li>Shorter_url (string,30) </li>
 <li>created_at (timeStamp)</li>
 
 <h4>user_info</h4>
-<li>user_id(integer,5)</li>  <!-- Primary key -->
-<li>password(string,15)</li>
-<li>email(string,20)</li>
+<li>user_id(integer,20)</li>  <!-- Primary key -->
+<li>password(string,255)</li>
+<li>email(string,255)</li>
 
 <h3> Here i need to create different types of routes such as:</h3>
 <li>login route </li>
