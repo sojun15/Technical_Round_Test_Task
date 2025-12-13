@@ -7,7 +7,7 @@
 <li>Edit or Update their url</li>
 
 <h3> For completing this task, I use different types of programming language</h3>
-<li>Frontend: Laravel + Tailwind CSS </li>
+<li>Frontend: Laravel and Tailwind CSS </li>
 <li>Backend: Laravel </li>
 <li>Database: MySQL
 
@@ -23,6 +23,7 @@
 <li>user_id(integer,5)</li>  <!-- Primary key -->
 <li>password(string,15)</li>
 <li>email(string,20)</li>
+
 <h3> Here i need to create different types of routes such as:</h3>
 <li>login route </li>
 <li>register route</li>
