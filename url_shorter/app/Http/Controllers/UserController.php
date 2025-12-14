@@ -1,10 +1,9 @@
 <?php
 
 namespace App\Http\Controllers;
-
 use Illuminate\Http\Request;
-// use Illuminate\Support\Facades\DB;
 use App\Models\UserInfo;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 
 class UserController extends Controller
@@ -23,6 +22,19 @@ class UserController extends Controller
             'password' => Hash::make($validated['password']),
         ]);
 
-        return back()->with('success', 'Account created successfully');
+        return redirect()->route('login')->with('success', 'Account created successfully');
+    }
+
+    public function LoginUser(Request $request)
+    {
+        $data = $request-> validate([
+            'user_id' => 'required',
+            'password' => 'required'
+        ]);
+
+        if(Auth::attempt($data))
+        {
+            return view('dashboard');
+        }
     }
 }
