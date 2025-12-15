@@ -6,6 +6,7 @@ use Illuminate\Support\Facades\Schema;
 
 return new class extends Migration
 {
+    // Into this up function the schema will create url_shorter table where remaining those column
     public function up(): void
     {
         Schema::create('url_shorter',function(Blueprint $table){

@@ -6,6 +6,7 @@ use Illuminate\Support\Facades\Schema;
 
 return new class extends Migration
 {
+    // Into this up function the schema will create user_info table where remaining those column
     public function up(): void
     {
         Schema::create('user_info', function (Blueprint $table) {
@@ -15,6 +16,7 @@ return new class extends Migration
         });
     }
 
+    // when we rollback or delete the user_info table then this schema will perform it
     public function down(): void
     {
         Schema::dropIfExists('user_info');

@@ -7,7 +7,7 @@
     <title>Store Url</title>
 </head>
 <body class="bg-gray-100 min-h-screen  flex items-center justify-center">
-
+    {{-- we define name route in this way: {{route('name')}} --}}
     <form action="{{ route('storeUrl') }}" method="POST" class="bg-white p-6 rounded-lg shadow-md w-1/3">
         @csrf
 

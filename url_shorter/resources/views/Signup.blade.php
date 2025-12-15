@@ -38,8 +38,9 @@
             Sign Up
         </button>
 
+        {{-- this hyperlink is used for going login page --}}
         <div>
-            <a href="{{route('login')}}" class="w-full bg-blue-600">Login</a>
+            <a href="{{route('login')}}" class="w-full flex justify-center text-blue-600">Login</a>
         </div>
     </form>
 

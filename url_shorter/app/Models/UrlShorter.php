@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class UrlShorter extends Model
 {
     use HasFactory;
-    protected $table = 'url_shorter';
+    protected $table = 'url_shorter'; // table name
 
     protected $primaryKey = 'url_id';
 
